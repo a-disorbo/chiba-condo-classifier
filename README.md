@@ -5,18 +5,11 @@
 
 ## Overview
 
-This project uses Japanese real estate transaction data published by the 
-Ministry of Land, Infrastructure, Transport and Tourism (MLIT) to build 
-an investment screening tool for the Chiba condominium market.
+As a pre-owned condo owner in Chiba Prefecture, I wanted to understand which municipalities offered the best conditions for condo property value appreciation. Rather than predicting exact prices, which the data does not support reliably, I built a screening tool to answer a more honest and useful question:
 
-Rather than predicting exact prices, the model asks a more useful question:
+*Which Chiba municipalities show structural conditions associated with above-median price appreciation in the following year?*
 
-> *Which Chiba municipalities show structural conditions associated with 
-> above-median price appreciation in the following year?*
-
-The output is a ranked opportunity index assigning each of 28 municipalities 
-a predicted probability of above-median appreciation — a shortlist for 
-further due diligence rather than a precise price forecast.
+The output is a ranked opportunity index assigning each of 28 municipalities a predicted probability of above-median appreciation, a shortlist for further due diligence rather than a precise forecast.
 
 ---
 
@@ -123,10 +116,10 @@ a noisy continuous target is unreliable. Binary classification asks a more
 honest and more useful question: which markets will outperform the median?
 
 **Why TimeSeriesSplit instead of standard cross-validation?**  
-Standard k-fold cross-validation randomly shuffles data, allowing the model 
-to train on 2018 data to predict 2012 outcomes — data leakage that inflates 
-performance metrics. TimeSeriesSplit enforces temporal order, matching real 
-deployment conditions.
+Standard cross-validation randomly shuffles data, which can allow the model to 
+train on future data to predict the past. This causes data leakage and inflates 
+performance metrics. TimeSeriesSplit keeps the data in chronological order, which 
+better reflects how the model would actually be used.
 
 **Why municipality-level aggregation?**  
 Individual transactions reflect property-specific characteristics as much 
@@ -149,7 +142,7 @@ building stock age, renovation activity, and transit access.
 
 ## Author
 
-**Background:** Anthony DiSorbo, MA TESOL, Google Data Analytics Certificate (Advanced)  
+**Background:** Anthony DiSorbo, Google Data Analytics Certificate (Advanced)  
 **Location:** Chiba Prefecture, Japan
 **LinkedIn** https://www.linkedin.com/in/adisorbo/
 
