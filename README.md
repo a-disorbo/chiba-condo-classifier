@@ -141,8 +141,8 @@ building stock age, renovation activity, and transit access.
 ---
 
 ## Author
-
-**Background:** Anthony DiSorbo, Google Data Analytics Certificate (Advanced)  
+Anthony DiSorbo — Data Analyst, Greater Tokyo
+[LinkedIn](https://www.linkedin.com/in/adisorbo/) · [GitHub](https://github.com/adisorbo)
 **Location:** Chiba Prefecture, Japan
 **LinkedIn** https://www.linkedin.com/in/adisorbo/
 
