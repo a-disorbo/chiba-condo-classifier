@@ -143,11 +143,3 @@ building stock age, renovation activity, and transit access.
 ## Author
 Anthony DiSorbo — Data Analyst, Greater Tokyo
 [LinkedIn](https://www.linkedin.com/in/adisorbo/) · [GitHub](https://github.com/adisorbo)
-**Location:** Chiba Prefecture, Japan
-**LinkedIn** https://www.linkedin.com/in/adisorbo/
-
----
-
-*Built using publicly available Japanese government data. All findings 
-are for research and portfolio purposes only and do not constitute 
-investment advice.*
